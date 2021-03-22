@@ -9,8 +9,23 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 30%;
+  }
+}
+
 body {
-  margin: 8rem;
+  margin: 5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .td-3 {
+    width: 15vw;
+  }
+  body {
+    margin: 1rem;
+  }
 }
 
 h1 {
@@ -59,6 +74,11 @@ td {
   vertical-align: top;
 }
 
+svg {
+  height: 3rem;
+  width: 3rem;
+}
+
 a:link,
 a:visited,
 a:active {
@@ -80,7 +100,6 @@ li {
   list-style: none;
   height: 0.3rem;
   background-color: rgb(31, 166, 250);
-  /* transform: translate(0, -50%); */
   box-shadow: 0 0 0.15rem rgb(31, 166, 250);
 }
 
@@ -108,8 +127,9 @@ li.rating-5 {
 }
 
 .td-1 {
-  width: 5vw;
-  text-align: center;
+  width: 2vw;
+  vertical-align: middle;
+  /* text-align: center; */
 }
 .td-2 {
   min-width: 60vw;
