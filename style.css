@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  margin: 5rem;
+  margin: 0 5rem;
 }
 
 @media only screen and (max-width: 700px) {
@@ -39,13 +39,13 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding: 0.8rem;
 }
 
 p {
   color: black;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0.2rem 0.8rem;
 }
 
@@ -54,7 +54,7 @@ img {
 }
 
 span {
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0.8rem;
   color: grey;
 }
@@ -93,7 +93,14 @@ a:active {
   display: block;
 }
 
-ul {
+a.link:link,
+a.visited,
+a.active {
+  display: inline;
+  font-size: 3rem;
+}
+
+.rating-ul {
   background-color: gray;
   height: 1rem;
   width: 90%;
@@ -101,7 +108,7 @@ ul {
   border-radius: 100px;
 }
 
-li {
+.rating {
   list-style: none;
   height: 1rem;
   background-color: rgb(31, 166, 250);
@@ -134,7 +141,8 @@ li.rating-5 {
 
 .td-1 {
   width: 2vw;
-  vertical-align: middle;
+  vertical-align: top;
+  padding-top: 2rem;
   /* text-align: center; */
 }
 .td-2 {
@@ -151,4 +159,11 @@ img.background {
   left: 0;
   width: 100vw;
   height: 100vh; /* 10*/
+}
+
+.points {
+  padding-left: 5rem;
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
